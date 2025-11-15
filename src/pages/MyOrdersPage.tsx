@@ -12,7 +12,7 @@ export default function MyOrdersPage() {
 	const userInfo = tgWebAppData?.user;
 	const [ orders, setOrders ] = useState([] as IOrderDto[]);
 	useEffect(() => {
-		axios.get(`${process.env.API_URL}/my-orders/${userInfo?.id}`).then((res) => {
+		axios.get(`${process.env.REACT_APP_API_URL}/my-orders/${userInfo?.id}`).then((res) => {
 			const res_orders = res.data;
 			if(Object.keys(res_orders).length > 0){
 				setOrders(res_orders);

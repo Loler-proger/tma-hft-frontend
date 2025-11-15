@@ -153,13 +153,13 @@ export const OrderDropdown: React.FC<OrderDropdownProps> = ({ order, children })
   const handleOpenChange = () => {
     console.log(order.order_status);
     if(order.order_status == 'processing payment'){
-      axios.post('http://localhost:8000/payment-link', {
+      axios.post(`${process.env.REACT_APP_API_URL}/payment-link`, {
         "amount": Number(order.price),
         "numPayments": 1,
         "currency": "TONCOIN",
         "description": `Ордер номер: ${order._id.toString()}`,
         "commentsEnabled": false,
-        "callbackUrl": 'http://localhost:8000/payment-webhook',
+        "callbackUrl": `${process.env.REACT_APP_API_URL}/payment-webhook`,
         "payload": `id: ${order._id.toString()}, user_id: ${order.user_id}`,
         "expiredIn": 3600
       }).then((res: any) => {

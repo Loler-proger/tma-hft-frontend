@@ -16,7 +16,7 @@ export default function ProfileInfo(){
     const userInfo = tgWebAppData?.user;
     const [ userDBInfo, setUserDBInfo ] = useState({} as IUserDB);
     useEffect(() => {
-        axios.get(`http://localhost:8000/users/${userInfo?.id}`).then((res) => {
+        axios.get(`${process.env.REACT_APP_API_URL}/users/${userInfo?.id}`).then((res) => {
             const data = res.data;
             if(data != null){
                 setUserDBInfo(data);

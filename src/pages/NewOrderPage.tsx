@@ -14,7 +14,7 @@ export default function NewOrderPage(){
         e.preventDefault();
         setIsSubmitted(true);
         // fetch to server
-        axios.post(`${process.env.API_URL}/new-order`, {
+        axios.post(`${process.env.REACT_APP_API_URL}/new-order`, {
             user: user_info,
             user_id: user_info?.id,
             price: selectedPrice,
@@ -26,13 +26,13 @@ export default function NewOrderPage(){
             order_status: 'processing payment'
         }).then((res: any) => {
             // здесь делаем редирект на invoice
-            axios.post(`${process.env.API_URL}/payment-link`, {
+            axios.post(`${process.env.REACT_APP_API_URL}/payment-link`, {
                 "amount": Number(selectedPrice),
                 "numPayments": 1,
                 "currency": "TONCOIN",
                 "description": `Ордер номер: ${res.data._id.toString()}`,
                 "commentsEnabled": false,
-                "callbackUrl": `${process.env.API_URL}/payment-webhook`,
+                "callbackUrl": `${process.env.REACT_APP_API_URL}/payment-webhook`,
                 "payload": `id: ${res.data._id.toString()}, tg_id: ${user_info?.id}`,
                 "expiredIn": 3600
             }).then((res: any) => {

@@ -9,7 +9,6 @@ import NewOrderPage from './pages/NewOrderPage.tsx';
 import { init, isTMA } from "@telegram-apps/sdk-react";
 import MyOrdersPage from './pages/MyOrdersPage.tsx';
 import { WelcomePage } from './pages/WelcomePage.tsx';
-import dotenv from 'dotenv';
 
 // import dotenv from 'dotenv';
 console.log(isTMA())
@@ -19,7 +18,6 @@ import('./mock.ts');
 // } else{
 //   console.warn('Not TMA');
 // }
-dotenv.config();
 const vh = window.innerHeight / 100;
 const vw = window.innerWidth / 100;
 // Для использования в CSS
