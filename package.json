@@ -64,5 +64,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/Loler-proger/tma-hft-frontend.git",
+  "author": "Loler-proger <slow2017@mail.ru>",
+  "license": "MIT"
 }
