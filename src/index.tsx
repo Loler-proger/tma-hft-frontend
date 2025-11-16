@@ -35,8 +35,8 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path='/tma-hft-frontend/' element={ <WelcomePage /> }/>
-        <Route path='/tma-hft-frontend/new-order' element={ <NewOrderPage /> }/>
-        <Route path='/tma-hft-frontend/my-orders' element={ <MyOrdersPage /> }/>
+        <Route path='/new-order' element={ <NewOrderPage /> }/>
+        <Route path='/my-orders' element={ <MyOrdersPage /> }/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
