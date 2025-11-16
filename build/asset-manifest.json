@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/tma-hft-frontend/static/css/main.a5c59c34.css",
+    "main.js": "/tma-hft-frontend/static/js/main.4ca8d38a.js",
+    "static/js/298.ae52498f.chunk.js": "/tma-hft-frontend/static/js/298.ae52498f.chunk.js",
+    "static/js/453.15ff075f.chunk.js": "/tma-hft-frontend/static/js/453.15ff075f.chunk.js",
+    "index.html": "/tma-hft-frontend/index.html",
+    "main.a5c59c34.css.map": "/tma-hft-frontend/static/css/main.a5c59c34.css.map",
+    "main.4ca8d38a.js.map": "/tma-hft-frontend/static/js/main.4ca8d38a.js.map",
+    "298.ae52498f.chunk.js.map": "/tma-hft-frontend/static/js/298.ae52498f.chunk.js.map",
+    "453.15ff075f.chunk.js.map": "/tma-hft-frontend/static/js/453.15ff075f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a5c59c34.css",
+    "static/js/main.4ca8d38a.js"
+  ]
+}

@@ -24,6 +24,7 @@
     "dotenv": "^17.2.3",
     "embla-carousel-react": "^8.6.0",
     "fuse.js": "^7.1.0",
+    "gh-pages": "^6.3.0",
     "lucide-react": "^0.548.0",
     "node": "^24.9.0",
     "node-clipboardy": "^1.0.3",
@@ -45,7 +46,9 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "craco eject"
+    "eject": "craco eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -68,5 +71,6 @@
   "main": "index.js",
   "repository": "https://github.com/Loler-proger/tma-hft-frontend.git",
   "author": "Loler-proger <slow2017@mail.ru>",
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "https://Loler-proger.github.io/tma-hft-frontend"
 }
